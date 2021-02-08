@@ -1,3 +1,3 @@
 FROM nginx
 COPY ./default.conf /etc/nginx/conf.d
-COPY ./dist/* /usr/share/nginx/html
+COPY ./dist/admin-manager-client/* /usr/share/nginx/html

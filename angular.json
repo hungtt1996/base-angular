@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/admin-manager-client",
             "showCircularDependencies": false,
             "allowedCommonJsDependencies": [
               "object-path",
