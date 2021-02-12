@@ -1,5 +1,4 @@
 import {Base64Utils} from './base64-encode-decode';
-import {ResponseApiModel} from '../../modules/auth/_models/response-api';
 import {sha256} from 'js-sha256';
 import * as moment from 'moment';
 
@@ -17,7 +16,7 @@ export function buildRequest(request: any, seabReq: boolean) {
     };
 }
 
-export function getResponseApi(response: ResponseApiModel) {
+export function getResponseApi(response: any) {
     const dataResBase64 = response.data;
     const checkSumRes = response.checksum;
     const appCheckSum = getCheckSum(dataResBase64);

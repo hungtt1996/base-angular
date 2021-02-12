@@ -1,15 +1,23 @@
 export const DynamicAsideMenuConfig = {
-    items: [
-        {
-            title: 'Quản lý vai trò',
-            root: true,
-            bullet: 'dot',
-            page: '/roles-management',
-            icon: 'flaticon2-browser-2',
-            svg: './assets/media/svg/icons/Design/Cap-2.svg',
-            // translate: 'MENU.WAY4_CARD'
-        },
-       /* {
+  items: [
+    {
+      title: "Quản lý vai trò",
+      root: true,
+      bullet: "dot",
+      page: "/roles-management",
+      icon: "flaticon2-browser-2",
+      svg: "./assets/media/svg/icons/Design/Cap-2.svg",
+      // translate: 'MENU.WAY4_CARD'
+    },
+    {
+      title: "Quản lý Người dùng",
+      root: true,
+      bullet: "dot",
+      page: "user-management",
+      icon: "flaticon2-browser-2",
+      svg: "./assets/media/svg/icons/Design/Cap-2.svg",
+    },
+    /* {
             title: 'Quản lý ứng dụng/API',
             root: true,
             bullet: 'dot',
@@ -54,5 +62,5 @@ export const DynamicAsideMenuConfig = {
             svg: './assets/media/svg/icons/Design/Cap-2.svg',
             // translate: 'MENU.WAY4_CARD'
         }*/
-    ]
+  ],
 };

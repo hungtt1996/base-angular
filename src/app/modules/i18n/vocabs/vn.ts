@@ -11,41 +11,41 @@ export const locale = {
         },
         AUTH: {
             GENERAL: {
-                OR: 'Or',
+                OR: 'Hoặc',
                 SUBMIT_BUTTON: 'Submit',
-                NO_ACCOUNT: 'Don\'t have an account?',
-                SIGNUP_BUTTON: 'Sign Up',
-                FORGOT_BUTTON: 'Forgot Password',
-                BACK_BUTTON: 'Back',
+                NO_ACCOUNT: 'Chưa có tài khoản?',
+                SIGNUP_BUTTON: 'Đăng ký',
+                FORGOT_BUTTON: 'Quên mật khẩu',
+                BACK_BUTTON: 'Quay lại',
                 PRIVACY: 'Privacy',
                 LEGAL: 'Legal',
                 CONTACT: 'Contact',
             },
             LOGIN: {
-                TITLE: 'Login Account',
-                BUTTON: 'Sign In',
+                TITLE: 'Tài khoản đăng nhập',
+                BUTTON: 'Đăng nhập',
             },
             FORGOT: {
-                TITLE: 'Forgotten Password?',
-                DESC: 'Enter your email to reset your password',
-                SUCCESS: 'Your account has been successfully reset.'
+                TITLE: 'Quên mật khẩu?',
+                DESC: 'Điền email để khôi phục mật khẩu',
+                SUCCESS: 'Tài khoản của bạn khôi phục thành công.'
             },
             REGISTER: {
-                TITLE: 'Sign Up',
-                DESC: 'Enter your details to create your account',
-                SUCCESS: 'Your account has been successfuly registered.'
+                TITLE: 'Đăng ký',
+                DESC: 'Nhập thông tin của bạn để tạo tài khoản',
+                SUCCESS: 'Tài khoản của bạn được tạo thành công.'
             },
             INPUT: {
                 EMAIL: 'Email',
-                FULLNAME: 'Fullname',
-                PASSWORD: 'Password',
-                CONFIRM_PASSWORD: 'Confirm Password',
-                USERNAME: 'Username'
+                FULLNAME: 'Tên đầy đủ',
+                PASSWORD: 'Mật khẩu',
+                CONFIRM_PASSWORD: 'Nhắc lại mật khẩu',
+                USERNAME: 'Tên đăng nhập'
             },
             VALIDATION: {
-                INVALID: '{{name}} is not valid',
-                REQUIRED: '{{name}} is required',
-                MIN_LENGTH: '{{name}} minimum length is {{min}}',
+                INVALID: '{{name}} không đúng',
+                REQUIRED: '{{name}} là bắt buộc',
+                MIN_LENGTH: '{{name}} có độ dài tối thiểu là {{min}}',
                 AGREEMENT_REQUIRED: 'Accepting terms & conditions are required',
                 NOT_FOUND: 'The requested {{name}} is not found',
                 INVALID_LOGIN: 'The login detail is incorrect',
