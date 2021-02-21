@@ -106,3 +106,12 @@ $sb-color: #d61817;
   padding-top: 7px;
   color: black !important;
 }
+
+.required::after {
+  content: " *";
+  color: red;
+}
+
+.invalid-feedback {
+  display: block;
+}

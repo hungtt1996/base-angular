@@ -1,1 +1,38 @@
-<p>create-user works!</p>
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="createForm" class="form col-md-8 offset-md-2" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="username" class="col-form-label required">User name</label>
+                <input id="username" type="text" class="form-control" formControlName="username"
+                       autocomplete="new-password">
+                <div class="invalid-feedback"
+                     *ngIf="createForm.get('username').invalid && (createForm.get('username').dirty || createForm.get('username').touched)">
+                    <span *ngIf="createForm.controls.username.errors.required">Field is required</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-form-label required">Password</label>
+                <input id="password" type="password" class="form-control" formControlName="password"
+                       autocomplete="new-password">
+                <div class="invalid-feedback"
+                     *ngIf="createForm.get('password').invalid && (createForm.get('password').dirty || createForm.get('password').touched)">
+                    <span *ngIf="createForm.controls.password.errors.required">Field is required</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="re-password" class="col-form-label required">Retype Password</label>
+                <input id="re-password" type="password" class="form-control" formControlName="rePassword"
+                       (blur)="onBlurRePwd($event)">
+                <div class="invalid-feedback"
+                     *ngIf="createForm.get('rePassword').invalid && (createForm.get('rePassword').dirty || createForm.get('rePassword').touched)">
+                    <span *ngIf="createForm.controls.rePassword.errors.required">Field is required</span>
+                    <span *ngIf="createForm.controls.rePassword.errors.notMatch">Retype password does not match</span>
+                </div>
+            </div>
+            <div class="form-group row justify-content-end">
+                <button class="btn btn-success mr-3" type="submit">Submit</button>
+                <button (click)="back()" class="btn btn-danger" type="button">Back</button>
+            </div>
+        </form>
+    </div>
+</div>
