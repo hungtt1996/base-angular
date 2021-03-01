@@ -67,6 +67,13 @@
                 <th>Người nhập</th>
                 <th>Người duyệt</th>
                 <th>Thời gian</th>
+                <th>
+                    Trạng thái
+                    <span style="margin-left: 1rem; margin-right: -2rem;"
+                          [ngbPopover]="pStatus" container="body"
+                          [autoClose]="'outside'" placement="bottom-right"
+                          (shown)="onShowPstatus()"><i class="fa fa-arrow-down" aria-label="hidden"></i></span>
+                </th>
             </tr>
             </thead>
             <tbody>
@@ -97,3 +104,14 @@
         ></mat-paginator>
     </div>
 </div>
+
+<ng-template #pStatus>
+    <form [formGroup]="statusForm" novalidate style="width: 150px; background-color: #0BB7AF">
+        <div *ngFor="let data of status; let i=index">
+            <label>
+                <input type="checkbox" [id]="data.code" [value]="data.code" (change)="onCheckboxChange($event)"/>
+                {{data.value}}
+            </label>
+        </div>
+    </form>
+</ng-template>
